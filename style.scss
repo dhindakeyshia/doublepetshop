@@ -1,0 +1,106 @@
+$primary-color: #f0d8ef;
+$text-color: rgb(143, 80, 143);
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: $primary-color;
+
+  a {
+    color: $text-color !important;
+  }
+}
+
+.navbar-brand img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Hero Section */
+
+.hero-section {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(224, 148, 224, 0.144),
+      rgba(254, 252, 252, 0.002)
+    ),
+    url("https://i.pinimg.com/1200x/35/87/1f/35871f03e523c2c78c1848da03f03ccb.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  h1,
+  p {
+    color: $text-color;
+  }
+}
+
+/* Button */
+
+.btn-custom {
+  background-color: #080400;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+
+  &:hover {
+    background-color: #070300;
+    color: white;
+  }
+}
+
+/* Section */
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Produk */
+
+#produk img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Gallery */
+
+#gallery img {
+  height: 250px;
+  object-fit: cover;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Testimoni */
+
+#testimoni .card {
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #000711;
+  color: white;
+}
